@@ -1,7 +1,7 @@
 """
 cryptography.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Tess Snyder
+Credit: Mary Feyrer
 
 Assignment:
 
@@ -11,15 +11,20 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
+
+
 start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 while start!="q":
-    
+    output = []
 
 
     if start=="e" :
         m=input("Message: ")
         key=input("Key: ")
+        
+        for x in m:
+            
     
     
     if start=="d" :
@@ -31,7 +36,7 @@ while start!="q":
 
     
     
-    if start!="q" and start!="e" and start!="d":
+    if start!="e" and start!="d":
         print("Did not understand command, try again.")
         
     start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
