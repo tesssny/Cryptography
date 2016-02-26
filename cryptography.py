@@ -16,7 +16,8 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 while start!="q":
-    output = []
+    mlist = []
+    keylist = []
 
 
     if start=="e" :
@@ -24,7 +25,10 @@ while start!="q":
         key=input("Key: ")
         
         for x in m:
-            
+            mlist.append(associations.find(x))
+        
+        for x in key:
+             keylist.append(associations.find(x))
     
     
     if start=="d" :
@@ -34,8 +38,7 @@ while start!="q":
     
     
 
-    
-    
+
     if start!="e" and start!="d":
         print("Did not understand command, try again.")
         
