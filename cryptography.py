@@ -29,7 +29,8 @@ while start!="q":
         
         for x in key:
              keylist.append(associations.find(x))
-    
+    print(mlist)
+    print(keylist)
     
     if start=="d" :
         m=input("Message: ")
