@@ -11,8 +11,10 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
+start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
+
 while start!="q":
-    start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    
 
 
     if start=="e" :
@@ -26,9 +28,14 @@ while start!="q":
         print("decrypt")
     
     
-    if start=="q" :
-        print("Goodbye!")
+
     
     
     if start!="q" and start!="e" and start!="d":
         print("Did not understand command, try again.")
+        
+    start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
+
+
+if start=="q" :
+    print("Goodbye!")
