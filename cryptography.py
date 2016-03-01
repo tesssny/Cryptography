@@ -71,7 +71,7 @@ while start!="q":
             if x<=len(associations):
                 print(associations[x], end="")
             else:
-                print(associations[x-len(associations)-1], end="")
+                print(associations[x-len(associations)], end="")
         print()
     
     
