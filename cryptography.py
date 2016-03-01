@@ -44,7 +44,7 @@ while start!="q":
                 print(associations[x], end="")
             else:
                 print(associations[x-len(associations)-1], end="")
-    print()
+        print()
     
     if start=="d" :
         mlist = []
@@ -72,7 +72,7 @@ while start!="q":
                 print(associations[x], end="")
             else:
                 print(associations[x-len(associations)-1], end="")
-    print()
+        print()
     
     
     
