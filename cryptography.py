@@ -66,7 +66,7 @@ while start!="q":
             mlen=mlen-1
         ziplist=list(zip(keylist, mlist))
         for x in ziplist:
-            addlist.append(x[0]+x[1])
+            addlist.append(x[1]-x[0])
         for x in addlist:
             if x<=len(associations):
                 print(associations[x], end="")
