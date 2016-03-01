@@ -76,8 +76,6 @@ while start!="q":
     
     
     
-
-
     if start!="e" and start!="d":
         print("Did not understand command, try again.")
         
