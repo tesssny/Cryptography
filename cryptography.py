@@ -68,7 +68,7 @@ while start!="q":
         for x in ziplist:
             addlist.append(x[1]-x[0])
         for x in addlist:
-            if x<=len(associations):
+            if x<len(associations):
                 print(associations[x], end="")
             else:
                 print(associations[x-len(associations)], end="")
