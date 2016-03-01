@@ -34,17 +34,17 @@ while start!="q":
         
         mlen=len(mlist)
         while mlen>0:
-            keylist.append(keylist[len(mlist)-n)
+            keylist.append(keylist[len(mlist)-mlen])
             mlen=mlen-1
         ziplist=list(zip(keylist, mlist))
         for x in ziplist:
-            addlist=addlist.append(x[0]+x[1])
+            addlist.append(x[0]+x[1])
         for x in addlist:
             if x<=len(associations):
                 print(associations[x], end="")
             else:
                 print(associations[x-len(associations)-1], end="")
-    
+    print()
     
     if start=="d" :
         m=input("Message: ")
