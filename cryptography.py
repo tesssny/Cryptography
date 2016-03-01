@@ -47,9 +47,33 @@ while start!="q":
     print()
     
     if start=="d" :
+        mlist = []
+        keylist = []
+        addlist=[]
+        
         m=input("Message: ")
         key=input("Key: ")
-        print("decrypt")
+        
+        for x in m:
+            mlist.append(associations.find(x))
+        
+        for x in key:
+             keylist.append(associations.find(x))
+        
+        mlen=len(mlist)
+        while mlen>0:
+            keylist.append(keylist[len(mlist)-mlen])
+            mlen=mlen-1
+        ziplist=list(zip(keylist, mlist))
+        for x in ziplist:
+            addlist.append(x[0]+x[1])
+        for x in addlist:
+            if x<=len(associations):
+                print(associations[x], end="")
+            else:
+                print(associations[x-len(associations)-1], end="")
+    print()
+    
     
     
 
